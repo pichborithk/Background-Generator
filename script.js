@@ -9,6 +9,11 @@ function setStartColor() {
   color2.value = "#ffff00";
 }
 
+// function setColorInput(color1, color2) {
+//   color1.value = color1;
+//   color2.value = color2;
+// }
+
 function setColor(color1, color2) {
   body.style.background =
     "linear-gradient(to right" + "," + color1 + "," + color2 + ")";
@@ -27,6 +32,7 @@ function randomColor() {
 function setRandomColor() {
   var firstRandom = randomColor();
   var secondRandom = randomColor();
+  // setColorInput(firstRandom, secondRandom);
   setColor(firstRandom, secondRandom);
 }
 
