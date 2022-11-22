@@ -32,6 +32,8 @@ function randomColor() {
 function setRandomColor() {
   var firstRandom = randomColor();
   var secondRandom = randomColor();
+  color1.value = firstRandom;
+  color2.value = secondRandom;
   // setColorInput(firstRandom, secondRandom);
   setColor(firstRandom, secondRandom);
 }
