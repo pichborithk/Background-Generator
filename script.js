@@ -1,8 +1,8 @@
-var color1 = document.querySelector(".color1");
-var color2 = document.querySelector(".color2");
-var body = document.querySelector("body");
-var cssCode = document.querySelector("h3");
-var random = document.querySelector("button");
+let color1 = document.querySelector(".color1");
+let color2 = document.querySelector(".color2");
+let body = document.querySelector("body");
+let cssCode = document.querySelector("h3");
+let random = document.querySelector("button");
 
 function setStartColor() {
   color1.value = "#ff0000";
@@ -21,8 +21,8 @@ function setColor(color1, color2) {
 }
 
 function randomColor() {
-  var letter = "0123456789ABCDEF";
-  var color = "#";
+  const letter = "0123456789ABCDEF";
+  let color = "#";
   for (var i = 0; i < 6; i++) {
     color += letter[Math.floor(Math.random() * 16)];
   }
@@ -30,8 +30,8 @@ function randomColor() {
 }
 
 function setRandomColor() {
-  var firstRandom = randomColor();
-  var secondRandom = randomColor();
+  let firstRandom = randomColor();
+  let secondRandom = randomColor();
   color1.value = firstRandom;
   color2.value = secondRandom;
   // setColorInput(firstRandom, secondRandom);
